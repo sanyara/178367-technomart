@@ -5,6 +5,7 @@
         <link href="css/style.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<title>Техномарт</title>
+		<meta name="format-detection" content="telephone=no">
     </head>
     <body>
         <header class="main-header">
@@ -39,7 +40,7 @@
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Компания</a></li>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Спецпредложения</a></li>
                         <li><a href="#">Доставка</a></li>
@@ -64,8 +65,8 @@
                         <a class="promo-btn" href="#">Для стройки</a>
                     </div>
                     <div class="promo-item promo-slider">
-                        <input type="radio" id="radio-1" name="toggle" checked>
-                        <input type="radio" id="radio-2" name="toggle">
+                        <input class="radio-toggle-1" type="radio" id="radio-1" name="toggle" checked>
+                        <input class="radio-toggle-2" type="radio" id="radio-2" name="toggle">
                         <div class="promo-slider-controls">
                             <label class="toggle-1" for="radio-1"></label>
                             <label class="toggle-2" for="radio-2"></label>
@@ -103,7 +104,7 @@
                         <div class="catalog-items">
                             <article class="catalog-item new-catalog-item">
                                 <div class="catalog-item-actions">
-                                    <a href="#" class="btn-buy">Купить</a>
+                                    <a href="order-form.html" class="btn-buy">Купить</a>
                                     <a href="#" class="btn-bookmark">В закладки</a>
                                 </div>
                                 <div class="catalog-item-image">
@@ -115,7 +116,7 @@
                             </article>
                             <article class="catalog-item">
                                 <div class="catalog-item-actions">
-                                    <a href="#" class="btn-buy">Купить</a>
+                                    <a href="order-form.html" class="btn-buy">Купить</a>
                                     <a href="#" class="btn-bookmark">В закладки</a>
                                 </div>
                                 <div class="catalog-item-image">
@@ -127,7 +128,7 @@
                             </article>
                             <article class="catalog-item">
                                 <div class="catalog-item-actions">
-                                    <a href="#" class="btn-buy">Купить</a>
+                                    <a href="order-form.html" class="btn-buy">Купить</a>
                                     <a href="#" class="btn-bookmark">В закладки</a>
                                 </div>
                                 <div class="catalog-item-image">
@@ -139,7 +140,7 @@
                             </article>
                             <article class="catalog-item new-catalog-item">
                                 <div class="catalog-item-actions">
-                                    <a href="#" class="btn-buy">Купить</a>
+                                    <a href="order-form.html" class="btn-buy">Купить</a>
                                     <a href="#" class="btn-bookmark">В закладки</a>
                                 </div>
                                 <div class="catalog-item-image">
@@ -208,9 +209,9 @@
                      Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                     </p>
                     <div class="services-tabs clearfix">
-                        <input type="radio" name="services-tabs" id="service-tab-1" checked>
-                        <input type="radio" name="services-tabs" id="service-tab-2">
-                        <input type="radio" name="services-tabs" id="service-tab-3">
+                        <input class="service-tab-1" type="radio" name="services-tabs" id="service-tab-1" checked>
+                        <input class="service-tab-2" type="radio" name="services-tabs" id="service-tab-2">
+                        <input class="service-tab-3" type="radio" name="services-tabs" id="service-tab-3">
                         <div class="services-tabs-controls">
                             <label for="service-tab-1">Доставка</label>
                             <label for="service-tab-2">Гарантия</label>
@@ -263,8 +264,8 @@
                 <div class="about-contacts">
                     <h2 class="about-title">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                    <a href="#"><img class="mini-map-image open-popup-btn" src="img/map_mini.jpg" alt="Координаты Техномарт" width="300" height="158"></a>
-                    <a href="#" class="feedback-btn open-catalog-btn open-popup-btn">Заблудились? Напишите нам!</a>
+                    <a href="technomart-map.html"><img class="mini-map-image open-popup-btn" src="img/map_mini.jpg" alt="Координаты Техномарт" width="300" height="158"></a>
+                    <a href="feedback-form.html" class="feedback-btn open-catalog-btn open-popup-btn">Заблудились? Напишите нам!</a>
                 </div>
                 <div class="map-container modal-popup">
                     <div class="map" id="map">

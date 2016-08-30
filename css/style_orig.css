@@ -82,7 +82,7 @@
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 .icon-search::before { content: "🔍"; } /* "\1f50d" */
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
-/*@keyframes bounce {
+@keyframes bounce {
   0%   {
     transform: translateY(-2000px);
   }
@@ -106,7 +106,7 @@
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
-}  */
+}  
 .clearfix::after {
   content: "";
   display: table;
@@ -207,7 +207,7 @@ h4  {
     color: #b7c9af;
 }
 .user-block .user-search-field {
-    padding: 12px 10px 12px 49px;
+    padding: 12px 10px 11px 49px;
     width: 211px;
     border: none;
     outline: none;
@@ -260,6 +260,7 @@ h4  {
     top: 12px;
     left: 48px;
     color: #fff;
+	
 }
 .user-block .user-block-search:active {
     color: rgba(255, 255, 255, 0.3);
@@ -437,10 +438,11 @@ h4  {
     color: #c5c5c5;
 }
 .main-navigation {
-    min-height: 59px;
+    min-height: 54px;
     text-align: center;
     font-size: 0;
     background-color: #32425c;
+	border-bottom: 5px solid #293449;
 }
 .main-navigation ul{
     display: inline-block;
@@ -456,7 +458,7 @@ h4  {
     line-height: 17px;
 }
 .main-navigation a {
-    padding: 20px 31px 23px;
+    padding: 20px 31px 18px;
     background-color: #32425c;
 }
 .main-navigation a:hover {
@@ -567,16 +569,16 @@ main {
 .promo-slider input[type="radio"] {
     display: none;
 }
-#radio-1:checked ~ .promo-slide-2 {
+.radio-toggle-1:checked ~ .promo-slide-2 {
     display: none;
 }
-#radio-1:checked ~ .promo-slider-controls .toggle-1 {
+.radio-toggle-1:checked ~ .promo-slider-controls .toggle-1 {
     background-color: #ee3643;
 }
-#radio-2:checked ~ .promo-slide-1 {
+.radio-toggle-2:checked ~ .promo-slide-1 {
     display: none;
 }
-#radio-2:checked ~ .promo-slider-controls .toggle-2 {
+.radio-toggle-2:checked ~ .promo-slider-controls .toggle-2 {
     background-color: #ee3643;
 }
 .promo-equipment, .promo-discounts, .promo-delivery {
@@ -801,6 +803,7 @@ main {
 }
 .catalog-item-actions .btn-buy:active {
     background-color: #518534;
+	box-shadow: none;
 }
 .catalog-item-actions .btn-buy::before {
     content: "\62";
@@ -926,12 +929,14 @@ main {
 }
 .services-tabs-controls label {
     display: block;
-    padding: 14px 22px 18px;
+    padding: 12px 22px 17px;
     background-color: #32425c;
     font-family: "Cuprum Bold", Arial, sans-serif;
     font-size: 21px;
     line-height: 30px;
     color: #fff;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
     cursor: pointer;
 }
 .services-tabs-content {
@@ -995,26 +1000,29 @@ main {
 .services-credit p {
     margin-bottom: 27px;
 }
-#service-tab-1:checked ~ .services-tabs-content .services-delivery {
+.service-tab-1:checked ~ .services-tabs-content .services-delivery {
     display: block;
 }
-#service-tab-1:checked ~ .services-tabs-controls label:first-child {
+.service-tab-1:checked ~ .services-tabs-controls label:first-child {
     background-color: #fff;
     color: #32425c;
+	border-color: #fff;
 }
-#service-tab-2:checked ~ .services-tabs-content .services-guaranties {
+.service-tab-2:checked ~ .services-tabs-content .services-guaranties {
     display: block;
 }
-#service-tab-2:checked ~ .services-tabs-controls label:nth-child(2) {
+.service-tab-2:checked ~ .services-tabs-controls label:nth-child(2) {
     background-color: #fff;
     color: #32425c;
+	border-color: #fff;
 }
-#service-tab-3:checked ~ .services-tabs-content .services-credit {
+.service-tab-3:checked ~ .services-tabs-content .services-credit {
     display: block;
 }
-#service-tab-3:checked ~ .services-tabs-controls label:nth-child(3) {
+.service-tab-3:checked ~ .services-tabs-controls label:nth-child(3) {
     background-color: #fff;
     color: #32425c;
+	border-color: #fff;
 }
 .services-tabs-controls label:hover {
     background-color: #293449;
@@ -1524,19 +1532,19 @@ input[type="radio"]:disabled + label {
 input[type="radio"]:disabled + label::before {
     color: #e9e9e9;
 }
-#checkbox-1:checked + label::before {
+.checkbox-1:checked + label::before {
     content: "\2611";
 }
-#checkbox-2:checked + label::before {
+.checkbox-2:checked + label::before {
     content: "\2611";
 }
-#checkbox-3:checked + label::before {
+.checkbox-3:checked + label::before {
     content: "\2611";
 }
-#checkbox-4:checked + label::before {
+.checkbox-4:checked + label::before {
     content: "\2611";
 }
-#checkbox-5:checked + label::before {
+.checkbox-5:checked + label::before {
     content: "\2611";
 }
 .filter-manufacturers .filter-title {
@@ -1559,10 +1567,10 @@ input[type="radio"]:disabled + label::before {
 .filter-type-power label:hover::before {
     color: #b5b5b5;
 }
-#power-radio-1:checked + label::before {
+.power-radio-1:checked + label::before {
     content: "\25cf";
 }
-#power-radio-2:checked + label::before {
+.power-radio-2:checked + label::before {
     content: "\25cf";
 }
 .filter-show-btn {
